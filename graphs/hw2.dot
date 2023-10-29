@@ -1,0 +1,25 @@
+digraph {
+  E [peripheries=2];
+  start [label= "", shape=none]
+  start -> S;
+  S -> A [label=a, color="red:green:red:green;0.25"];
+  S -> B [label=b, color=green];
+  A -> AA [label=a, color=red];
+  A -> AB [label=b, color=green];
+  B -> BA [label=a, color=green];
+  B -> BB [label=b, color=green];
+  AA -> AA [label="a, b", color=blue];
+  AB -> AB [label="a, b", color=blue];
+  BA -> BA [label="a, b", color=blue];
+  BB -> BB [label="a, b", color=blue];
+  AA -> AAxB [label=b, color=red];
+  AB -> ABxB [label=b, color=green];
+  BA -> BAxA [label=a, color=green];
+  BB -> BBxA [label=a, color=green];
+  BB -> BBxB [label=b, color=green];
+  AAxB -> E [label=b, color=red];
+  ABxB -> E [label=a, color=green];
+  BAxA -> E [label=b, color=green];
+  BBxA -> E [label=b, color=green];
+  BBxB -> E [label=a, color=green];
+}
