@@ -1,0 +1,15 @@
+digraph {
+  E [peripheries=2];
+  AAA [peripheries=2];
+  start [label= "", shape=none];
+  start -> S;
+  S -> A [label=a];
+  A -> AA [label=a];
+  AA -> AAA [label=a];
+  AAA -> A [label=a];
+
+  A -> E [label=b];
+  AA -> B [label=b];
+  B -> E [label=b];
+
+}

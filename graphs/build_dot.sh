@@ -1,1 +1,1 @@
-dot -Tsvg hw2.dot > aag1.svg
+dot -Tsvg hw3.dot > aag3.svg
